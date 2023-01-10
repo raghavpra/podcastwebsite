@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="textstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;700&family=Montserrat:wght@400;600&display=swap'); </style>
+    <title>Podcast Title by Karlton Daniel</title>
+</head>
+<body class="noscroll">
+    <!-- Side navigation menu -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="listen.html">LISTEN</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="support.html">SUPPORT</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "220px";
+            document.getElementById("navbutton").style.opacity = "0%";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("navbutton").style.opacity = "100%";
+        }
+    </script>
+
+    <!-- Header -->
+    <div id="container" class="header">
+        <img class="big-logo" src="./images/PodcastLogo.png"></img>
+    </div>
+
+    <!-- Main section -->
+    <div id="container" class="bg-black" style="height:40em">
+        <span class="h white">CONTACT</span>
+        <span class="h2 white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, </span>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="email" placeholder="Email" required>
+            <br>
+            <textarea id="message" rows="4" placeholder="Message"></textarea>
+            <button type="submit" class="button">SUBMIT</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div id="container" class="footer">
+        <div id="container" class="left-content">
+            <img src="images/SCPLogo-07.png"></img>
+            <span class="copyright">Copyright © 2022 Seattle Clemency Project. All rights reserved.</span>
+        </div>
+        <div id="container" class="socials">
+            <span>FOLLOW US</span>
+            <ul>
+                <li> <a href="#"><img src="images/SocialLogos/instagram.png"></img></a> </li>
+                <li> <a href="#"><img src="images/SocialLogos/facebook.png"></img></a> </li>
+                <li> <a href="#"><img src="images/SocialLogos/twitter.png"></img></a> </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        // function sendEmail(){
+        //     Email.send({
+        //         Host : "smtp.gmail.com"
+        //         Username : "#"
+        //         Password : "password"
+        //         SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+        //         To : '#',
+        //         From : document.getElementById("email").value,
+        //         Subject : "Contact Form Submission",
+        //         Body : "Name: " document.getElementById("name").value
+        //             + "<br> Email: " + document.getElementById("email").value
+        //             + "<br> Message: " + document.getElementById("message").value
+        //     }).then(
+        //     message => alert(message)
+        //     );
+        // }
+    </script>
+    <!-- Nav button -->
+    <img src="images/HamburgerMenu-06.png" id="navbutton" onclick="openNav()"></img>
+</body>
+<script defer src="animations.js"></script>
+</html>

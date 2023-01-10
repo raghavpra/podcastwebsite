@@ -1,0 +1,517 @@
+img, a {
+    border:none;
+    outline:none;
+}
+
+/* Hide scrollbar */
+div::-webkit-scrollbar {
+    display: none;
+}
+div {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Main stuff */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.noscroll {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.noscroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#container {
+    display: block;
+    padding:0px;
+    margin:0px;
+}
+
+/* Background stuff */
+.bg-image {
+    position: relative;
+    top:0em;
+    width: 100vw;
+    height: 44em;
+    background: url(images/KarltonBW.png) no-repeat center center;
+    background-size: cover;
+}
+
+.bg-gradient {
+    position: absolute;
+    left: 0em;
+    top: 20em;
+    bottom:0em;
+    width: 100%;
+    height: 24em;
+    background-image: linear-gradient(rgba(26,26,26,0), rgba(26,26,26,1));
+}
+
+.bg-black {
+    position: relative;
+    top: 0px;
+    background-color: #1A1A1A;
+    background-size: cover;
+    width: 100%;
+    height: 50em;
+}
+
+.bg-white {
+    position: relative;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 28.25em;
+}
+
+.bg2-beige {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 32em;
+    background-color: #E0B982;
+}
+
+.main-content {
+    position: relative;
+    top: 40px;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+}
+
+/* Elements */
+
+.logo-wrapper {
+    position: absolute;
+    width: 37.5em;
+    top: 13em;
+    left: 5em;
+}
+
+.big-logo {
+    width: 37.5em;
+}
+
+.button {
+    height: 4em;
+    background-color:rgba(244,190,103,0.5);
+    color:white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20pt;
+    text-align: center;
+    border-radius: 0.4em;
+    height: min-content;
+    padding: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    text-decoration: none;
+}
+
+.button:hover {
+    transition: 0.2s;
+    background-color:rgba(244,190,103,0.7);
+}
+
+.main-content .button {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.karlton-portrait {
+    position: relative;
+    display: inline;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+}
+
+/* Main page links */
+.main-links {
+    position: relative;
+    width: 80%;
+    right: 10%;
+    left: 10%;
+    top: 100px;
+    text-align: center;
+}
+
+.main-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    margin: 5px;
+    padding: 4px 8px;
+    background-color: rgba(255,255,255,0);
+    border: solid 2px rgba(255, 255, 255, 0.429);
+    border-radius: 1px;
+}
+
+.main-links img {
+    position: relative;
+    top: 3px;
+    right: 6px;
+    margin-left: 3px;
+    width: 20px;
+    padding: 0px;
+    padding-left: 2px;
+}
+
+.main-links a:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+/* Side menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(17, 17, 17, 0.201); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 150px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    justify-content: right;
+  }
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 50px 50px;
+    align-items: right;
+    text-align: right;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #e0e0e0;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    font-size: 70px;
+    margin-left: 50px;
+}
+
+#navbutton {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 60px;
+    opacity: 100;
+    transition: 0.2s;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    background-color: white;
+    height: 120px;
+}
+
+.footer .left-content {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 60%;
+}
+
+.footer .left-content img {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    right: 0px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer .left-content .copyright {
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.footer .socials {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 40%;
+}
+
+.footer .socials ul {
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+
+}
+.footer .socials ul li {
+    display: inline;
+}
+.footer .socials ul li a img {
+    width: 80px;
+}
+
+.footer .socials span {
+    position: absolute;
+    color: black;
+    font-size: 36pt;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    right: 20px;
+}
+
+/* Listen page */ 
+
+.listen-buttons ul li:nth-child(1) {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.listen-buttons ul li:nth-child(2) {
+    animation: 1s ease-out 0.1s 1 slideInFromLeft;
+}
+
+.listen-buttons ul li:nth-child(3) {
+    animation: 1s ease-out 0.2s 1 slideInFromLeft;
+}
+.listen-buttons ul li:nth-child(4) {
+    animation: 1s ease-out 0.3s 1 slideInFromLeft;
+}
+.listen-buttons ul li:nth-child(5) {
+    animation: 1s ease-out 0.4s 1 slideInFromLeft;
+}
+
+.listen-buttons {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.listen-buttons ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-top: 10px;
+}
+.listen-buttons ul li:nth-child(1) {
+    background-color: #10BC4C;
+}
+.listen-buttons ul li:nth-child(2) {
+    background-color: #228AC8;
+}
+
+.listen-buttons ul li:nth-child(3) {
+    background-color: #AA1DD3;
+}
+.listen-buttons ul li:nth-child(4) {
+    background-color: #FFBA00;
+}
+.listen-buttons ul li:nth-child(5) {
+    background-color: #ED802C;
+}
+
+.listen-buttons ul li {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 0;
+    padding-bottom: 20%;
+    transition: 0.5s all;
+    box-shadow: -2px 3px 3px #0000005a;
+}
+
+.listen-buttons ul li:hover {
+    transform: translateY(-10%);
+}
+
+.listen-buttons ul li img {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Contact form */
+
+form {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    width: 60%;
+}
+
+form input, form textarea {
+    position: relative;
+    border: 0;
+    margin: 10px 0px;
+    outline: none;
+    background-color: white;
+    resize: none;
+    position: relative;
+    font-size: 11pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+form input {
+    height: 30px;
+    padding: 10px 20px;
+    width: 44%;
+}
+
+form :nth-child(2) {
+    position: absolute;
+    right: 0px;
+}
+
+form textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    height: 200px;
+    padding: 20px;
+    overflow-x:hidden;
+}
+
+/* Support page */
+
+.support-buttons {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.support-buttons ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.support-buttons ul li:nth-child(1) {
+    background-color: #F2A040;
+}
+.support-buttons ul li:nth-child(2) {
+    background-color: #EA0129;
+}
+
+.support-buttons ul li {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    height: 15em;
+    margin: 25px;
+    transition: 0.5s all;
+    box-shadow: -2px 3px 3px #0000005a;
+}
+
+
+.support-buttons ul li .support-img-bg {
+    background-color: white;
+    display: inline-block;
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    width: auto;
+    position: relative;
+    top: 5%;
+    left: 3%;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.support-buttons ul li .bdytxt {
+    position: absolute;
+    margin: 5px;
+    left: 250px;
+    top: 35px;
+    font-size: 12pt;
+}
+
+.support-buttons ul li div span a {
+    color: white;
+    text-decoration: none;
+}
+
+.support-buttons ul li img {
+    width: 80%;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* AOS animation */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-40%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden2 {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.25s;
+}
+
+.show2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Header */
+.header {
+    position: sticky;
+    width: 100%;
+    height: 120px;
+    top: 0px;
+    background-color: #1A1A1A;
+    box-shadow: 1px 5px 4px #00000065;
+}
+.header .big-logo {
+    width: 20em;
+    padding-top: 30px;
+    padding-left: 30px;
+}
